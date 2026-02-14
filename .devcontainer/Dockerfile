@@ -1,6 +1,6 @@
 
 # Base image: Uses the official Dev Containers base for Ubuntu 22.04 (“Jammy”).
-# Jammy is Ubuntu version name where 22.04 is version number
+# Jammy is Ubuntu version name where 22.04 is version number  
 FROM mcr.microsoft.com/devcontainers/base:jammy 
   
 # Install .NET 8 SDK
