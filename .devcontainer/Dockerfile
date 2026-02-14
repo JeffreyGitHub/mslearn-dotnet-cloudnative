@@ -1,5 +1,8 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
 
+# Base image: Uses the official Dev Containers base for Ubuntu 22.04 (“Jammy”).
+# Jammy is Ubuntu version name where 22.04 is version number
+FROM mcr.microsoft.com/devcontainers/base:jammy 
+  
 # Install .NET 8 SDK
 RUN wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
     && dpkg -i packages-microsoft-prod.deb \
