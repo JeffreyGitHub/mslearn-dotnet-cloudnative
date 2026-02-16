@@ -16,5 +16,10 @@
       ]
     }
   },
-  "postCreateCommand": "dotnet --info"
+  "postCreateCommand": "dotnet --info",
+  "runArgs": [
+      "--volume=/var/run/docker.sock:/var/run/docker.sock",
+      "--volume=/usr/bin/docker:/usr/bin/docker:ro",
+      "--volume=/usr/lib/docker:/usr/lib/docker:ro"
+		]
 }
