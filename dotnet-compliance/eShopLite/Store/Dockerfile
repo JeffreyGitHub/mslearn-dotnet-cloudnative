@@ -10,4 +10,4 @@ RUN dotnet publish Store/Store.csproj -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "Store.dll"]
+ENTRYPOINT ["dotnet", "Store.dll"]  
